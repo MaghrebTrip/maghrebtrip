@@ -1,0 +1,23 @@
+.navbar {
+    background-color: var(--dark-red);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar ul li a {
+    color: var(--white);
+    font-weight: 500;
+}
+
+.navbar .btn.register {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+.navbar .btn.login {
+    background-color: var(--white);
+    color: var(--dark-red);
+}
