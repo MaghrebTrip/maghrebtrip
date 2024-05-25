@@ -45,7 +45,7 @@ function Contact() {
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="btn">
+                <button type="submit" className="btn px-4">
                   Submit
                 </button>
               </form>
