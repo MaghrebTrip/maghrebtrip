@@ -15,9 +15,8 @@
 
 .navbar .btn.register {
     border: 2px solid var(--white);
-    color: var(--white);
 }
 .navbar .btn.login {
-    background-color: var(--white);
-    color: var(--dark-red);
+    background-color: var(--white) !important;
+    color: var(--dark-red) !important;
 }

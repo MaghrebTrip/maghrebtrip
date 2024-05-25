@@ -7,6 +7,8 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import DownloadPage from "./pages/DownloadPage";
 import ContactPage from "./pages/ContactPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 // Private Routes
 // ...
@@ -22,6 +24,8 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/download" element={<DownloadPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
           </Route>
         </Routes>
       </Router>
