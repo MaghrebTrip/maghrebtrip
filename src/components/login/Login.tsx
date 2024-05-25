@@ -5,7 +5,7 @@ function Login() {
   return (
     <section id="login" className="login">
       <div className="container">
-        <div className="row p-5">
+        <div className="row p-5 align-items-center">
           <div className="col-lg-6 order-lg-2">
             <div className="login-text p-5">
               <h2 className="display-4">Log In</h2>
@@ -21,6 +21,7 @@ function Login() {
                     className="form-control"
                     id="email"
                     aria-describedby="emailHelp"
+                    required
                   />
                   <div id="emailHelp" className="form-text">
                     We'll never share your email with anyone else.
@@ -34,6 +35,7 @@ function Login() {
                     type="password"
                     className="form-control"
                     id="password"
+                    required
                   />
                 </div>
                 <button type="submit" className="btn px-4">

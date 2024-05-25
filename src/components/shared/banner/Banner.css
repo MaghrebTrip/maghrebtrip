@@ -1,6 +1,6 @@
 .banner-top, .banner-bottom {
     width: 100%;
-    background-image: url('../../assets/img/hero.jpg');
+    background-image: url('../../../assets/img/hero.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;

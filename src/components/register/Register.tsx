@@ -5,7 +5,7 @@ function Register() {
   return (
     <section id="register" className="register">
       <div className="container">
-        <div className="row p-5">
+        <div className="row p-5 align-items-center">
           <div className="col-lg-6">
             <div className="register-text p-5">
               <h2 className="display-4">Register</h2>
@@ -23,6 +23,7 @@ function Register() {
                         type="text"
                         className="form-control"
                         id="first-name"
+                        required
                       />
                     </div>
                     <div className="col">
@@ -33,6 +34,7 @@ function Register() {
                         type="text"
                         className="form-control"
                         id="last-name"
+                        required
                       />
                     </div>
                   </div>
@@ -46,6 +48,7 @@ function Register() {
                     className="form-control"
                     id="email"
                     aria-describedby="emailHelp"
+                    required
                   />
                   <div id="emailHelp" className="form-text">
                     We'll never share your email with anyone else.
@@ -61,6 +64,7 @@ function Register() {
                         type="password"
                         className="form-control"
                         id="password"
+                        required
                       />
                     </div>
                     <div className="col">
@@ -71,6 +75,7 @@ function Register() {
                         type="password"
                         className="form-control"
                         id="confirm-password"
+                        required
                       />
                     </div>
                   </div>

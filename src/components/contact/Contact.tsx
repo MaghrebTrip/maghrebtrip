@@ -6,7 +6,7 @@ function Contact() {
     <section id="contact" className="contact">
       <div className="container">
         <div className="row p-5 align-items-center">
-          <div className="col-lg-7 order-lg-2">
+          <div className="col-lg-6 order-lg-2">
             <div className="contact-text p-5">
               <h2 className="display-4">Contact Us</h2>
               <p>
@@ -15,7 +15,7 @@ function Contact() {
               </p>
               <form>
                 <div className="form-group mb-3">
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="name" className="form-label">Name</label>
                   <input
                     type="text"
                     className="form-control"
@@ -24,16 +24,20 @@ function Contact() {
                   />
                 </div>
                 <div className="form-group mb-3">
-                  <label htmlFor="email">Email</label>
+                  <label htmlFor="email" className="form-label">Email</label>
                   <input
                     type="email"
                     className="form-control"
                     id="email"
+                    aria-describedby="emailHelp"
                     required
                   />
+                  <div id="emailHelp" className="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
                 </div>
                 <div className="form-group mb-3">
-                  <label htmlFor="message">Message</label>
+                  <label htmlFor="message" className="form-label">Message</label>
                   <textarea
                     className="form-control"
                     id="message"
@@ -47,7 +51,7 @@ function Contact() {
               </form>
             </div>
           </div>
-          <div className="col-lg-5 order-lg-1">
+          <div className="col-lg-6 order-lg-1">
             <div className="contact-img">
               <img
                 className="img-fluid"
