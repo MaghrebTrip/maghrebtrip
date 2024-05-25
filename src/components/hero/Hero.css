@@ -52,3 +52,15 @@
     background-color: var(--dark-red);
     color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    .hero .hero-content h2 {
+        font-size: 3rem;
+    }
+    .hero .hero-content p {
+        font-size: 1.2rem;
+    }
+    .hero .hero-content .btn {
+        font-size: 1.1rem;
+    }
+}

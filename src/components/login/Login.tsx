@@ -7,7 +7,7 @@ function Login() {
       <div className="container">
         <div className="row p-5 align-items-center">
           <div className="col-lg-6 order-lg-2">
-            <div className="login-text p-5">
+            <div className="login-text p-0 p-md-5">
               <h2 className="display-4">Log In</h2>
               <p>Log in to access your account and plan your next adventure.</p>
 

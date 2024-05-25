@@ -7,7 +7,7 @@ function Register() {
       <div className="container">
         <div className="row p-5 align-items-center">
           <div className="col-lg-6">
-            <div className="register-text p-5">
+            <div className="register-text p-0 p-md-5">
               <h2 className="display-4">Register</h2>
               <p>
                 Create an account to access exclusive features and benefits.

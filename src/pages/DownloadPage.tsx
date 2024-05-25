@@ -1,11 +1,13 @@
+import BannerTop from "../components/shared/banner/BannerTop";
+import BannerBottom from "../components/shared/banner/BannerBottom";
 import Download from "../components/download/Download";
 
 function DownloadPage() {
   return (
     <>
-      <div className="banner-top download"></div>
+      <BannerTop />
       <Download />
-      <div className="banner-bottom download"></div>
+      <BannerBottom />
     </>
   );
 }

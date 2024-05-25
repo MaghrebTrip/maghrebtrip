@@ -7,7 +7,7 @@ function Contact() {
       <div className="container">
         <div className="row p-5 align-items-center">
           <div className="col-lg-6 order-lg-2">
-            <div className="contact-text p-5">
+            <div className="contact-text p-0 p-md-5">
               <h2 className="display-4">Contact Us</h2>
               <p>
                 For any inquiries, suggestions, or feedback, please don't

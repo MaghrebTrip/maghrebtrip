@@ -7,7 +7,7 @@ function About() {
       <div className="container">
         <div className="row p-5 align-items-center">
           <div className="col-lg-7 order-lg-2">
-            <div className="about-text p-5">
+            <div className="about-text p-0 p-md-5">
               <h2 className="display-4">About Us</h2>
               <p>
                 MaghrebTrip is your go-to virtual guide for uncovering the
