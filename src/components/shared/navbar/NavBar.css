@@ -4,7 +4,10 @@
 
 }
 
-.navbar-brand {
+.navbar .navbar-brand a {
+    color: #fff;
+}
+.navbar .navbar-brand a:hover {
     color: #fff;
 }
 
