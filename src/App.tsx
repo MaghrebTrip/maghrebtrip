@@ -14,8 +14,9 @@ import RegisterPage from "./pages/RegisterPage";
 // Private Routes
 import PrivateRoutes from "./utils/PrivateRoutes";
 import DashboardPage from "./pages/admin/DashboardPage";
+import Dashboard from "./pages/admin/Dashboard.jsx";
 import TouristsManagementPage from "./pages/admin/TouristsManagementPage";
-import CitiesManagementPage from "./pages/admin/CitiesManagementPage";
+// import CitiesManagementPage from "./pages/admin/CitiesManagementPage";
 import AttractionsManagementPage from "./pages/admin/AttractionsManagementPage";
 import PlansManagementPage from "./pages/admin/PlansManagementPage";
 import FeedbacksManagementPage from "./pages/admin/FeedbacksManagementPage";
@@ -36,11 +37,31 @@ function App() {
             </Route>
             <Route path="/admin/*" element={<PrivateRoutes />}>
               <Route index element={<DashboardPage />} />
-              <Route path="tourists-management" element={<TouristsManagementPage />} />
-              <Route path="cities-management" element={<CitiesManagementPage />} />
-              <Route path="attractions-management" element={<AttractionsManagementPage />} />
-              <Route path="plans-management" element={<PlansManagementPage />} />
-              <Route path="feedbacks-management" element={<FeedbacksManagementPage />} />
+              <Route path="dashboard" element={<Dashboard />} />
+              <Route
+                path="tourists-management"
+                element={<Dashboard section={"tourists"} />}
+              />
+              <Route
+                path="cities-management"
+                element={<Dashboard section={"cities"} />}
+              />
+              <Route
+                path="hotels-management"
+                element={<Dashboard section={"hotels"} />}
+              />
+              <Route
+                path="restaurants-management"
+                element={<Dashboard section={"restaurants"} />}
+              />
+              <Route
+                path="monuments-management"
+                element={<Dashboard section={"monuments"} />}
+              />
+              <Route
+                path="feedbacks-management"
+                element={<Dashboard section={"feedbacks"} />}
+              />
             </Route>
           </Routes>
         </ScrollToTop>
