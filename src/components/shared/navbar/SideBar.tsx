@@ -46,22 +46,32 @@ function SideBar() {
         </li>
         <li className="nav-item">
           <Link
-            to="/admin/attractions-management"
+            to="/admin/hotels-management"
             className={`nav-link ${
-              currentPath === "/admin/attractions-management" ? "active" : ""
+              currentPath === "/admin/hotels-management" ? "active" : ""
             }`}
           >
-            Attractions
+            Hotels
           </Link>
-        </li>
+        </li>{" "}
         <li className="nav-item">
           <Link
-            to="/admin/plans-management"
+            to="/admin/restaurants-management"
             className={`nav-link ${
-              currentPath === "/admin/plans-management" ? "active" : ""
+              currentPath === "/admin/restaurants-management" ? "active" : ""
             }`}
           >
-            Plans
+            Restaurants
+          </Link>
+        </li>{" "}
+        <li className="nav-item">
+          <Link
+            to="/admin/monuments-management"
+            className={`nav-link ${
+              currentPath === "/admin/monuments-management" ? "active" : ""
+            }`}
+          >
+            Monuments
           </Link>
         </li>
         <li className="nav-item">
