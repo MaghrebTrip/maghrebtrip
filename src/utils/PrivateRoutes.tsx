@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 function PrivateRoutes() {
   return (
     <>
-      <div className="row" style={{height: "100vh", overflow: "hidden"}}>
+      <div className="row g-0" style={{height: "100vh", overflow: "hidden"}}>
         <div className="col-2">
           <SideBar />
         </div>
