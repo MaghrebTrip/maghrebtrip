@@ -24,6 +24,19 @@ const ManagementPage: React.FC<ManagementPageProps> = ({ section }) => {
     });
   }, [section, link]);
 
+  const parseRoomTypes = (roomTypes: any) => {
+    return roomTypes
+      .split("[")[1]
+      .split("]")[0]
+      .replace(/"/g, "")
+      .replace(/'/g, "");
+  };
+
+  const displayImageBase64 = (image: string) => {
+    const imgUrl = `data:image/png;base64,${image}`;
+    return <img src={imgUrl} alt="hotel" style={{ width: "50px" }} />;
+  }
+
   return (
     <section id="admin-management" className="admin-management p-5">
       <div className="container">
@@ -48,15 +61,19 @@ const ManagementPage: React.FC<ManagementPageProps> = ({ section }) => {
                 <tr key={rowIndex}>
                   {keys.map((key, cellIndex) => (
                     <td key={cellIndex}>
-                      {key === "image"
-                        ? "image base 64"
-                        : key === "about" || key === "description"
-                        ? row[key]?.substring(0, 50) + "..."
-                        : key === "password"
-                        ? "********"
-                        : key === "date"
-                        ? new Date(row[key]).toLocaleString()
-                        : row[key]}
+                      {key === "image" ? ( 
+                        displayImageBase64(row[key])
+                      ) : key === "about" || key === "description" ? (
+                        row[key]?.substring(0, 50) + "..."
+                      ) : key === "password" ? (
+                        "********"
+                      ) : key === "date" ? (
+                        new Date(row[key]).toLocaleString()
+                      ) : key === "roomTypes" ? (
+                        parseRoomTypes(row[key])
+                      ) : (
+                        row[key]
+                      )}
                     </td>
                   ))}
                   <td>
